@@ -19,7 +19,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   const navigate = useNavigate();
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow flex flex-col">
+    <div className="bg-emerald-50 rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow flex flex-col">
       {imageUrl && (
         <img
           src={imageUrl}
@@ -28,14 +28,14 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         />
       )}
 
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      {description && <p className="text-gray-500 mb-2">{description}</p>}
-      <p className="text-gray-600 mb-1">Duration: {duration}</p>
-      <p className="text-gray-600 mb-4">Price: {price}</p>
+      <h3 className="text-teal-900 text-xl font-semibold mb-2">{title}</h3>
+      {description && <p className="text-teal-900 mb-2">{description}</p>}
+      <p className="text-teal-600 mb-1">Duration: {duration}</p>
+      <p className="text-teal-600 mb-4">Price: {price}</p>
 
       <button
         onClick={() => navigate("/schedule")}
-        className="mt-auto bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+        className="mt-auto bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-900 transition"
       >
         Book Now
       </button>

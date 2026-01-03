@@ -4,7 +4,6 @@ import Contact from "./pages/Contact";
 import Schedule from "./pages/Schedule";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
 function App() {
   return (
     <Router>
